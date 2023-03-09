@@ -56,7 +56,7 @@ driverpath = r"C:\Users\Orozc\OneDrive\My Documents\Projects\edgedriver_win64\ms
 driver = webdriver.Edge(driverpath)
 
 # iterate through the list
-for i in range(0,10):
+for i in range(0,len(urlList)):
     try:
         print(str(i))
         driver.get(str(urlList[i]))
